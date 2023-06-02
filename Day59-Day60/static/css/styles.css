@@ -1,0 +1,268 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat);
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat-Black', sans-serif;
+}
+
+.navbar {
+    padding: 0 0;
+    background-color: #353535;
+}
+
+.navbar2 {
+    padding: 0 0 4.5rem;
+    background-color: #353535;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+}
+
+/* Header */
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #353535;
+}
+
+.title {
+    padding: 12%;
+    background-color: #353535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutme {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/about.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.contactme {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/contact.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.title h1 {
+    font-weight: 800;
+    color: white;
+    font-size: 4rem;
+}
+
+.title p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.main-para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4% 12%;
+}
+
+.para {
+    text-align: center;
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+/* Blog Section */
+
+.blogs-section {
+    text-align: left;
+    padding: 3%;
+    position: relative;
+    display: flex;
+}
+
+.blogs {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.content {
+    border-bottom: 2px solid rgb(200, 200, 200);
+    padding: 2% 0;
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
+.content h2 {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.content a {
+    text-decoration: none;
+    color: #353535;
+}
+
+/* Footer */
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 10rem;
+    border-top: 2px solid rgb(200, 200, 200);
+}
+
+.footer-socials {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+
+.footer-link {
+    background-color: #353535;
+    padding: 0.7rem;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.footer-link i {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Posts CSS */
+
+.post-content {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3% 15%;
+}
+
+.post-content h2 {
+    margin-bottom: 2rem;
+}
+
+.post-content p {
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+/* Contact */
+
+.contact-content {
+    margin: 0 auto;
+    display: flex;
+    width: 85%;
+    padding: 4% 12%;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-content div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid grey;
+    margin: 1rem 0;
+    height: 5rem;
+}
+
+.contact-content div label {
+    outline: none;
+    border: none;
+    z-index: 2;
+    font-size: 1.5rem;
+    margin-bottom: -.5px;
+}
+
+.contact-content div input {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 70%;
+    font-size: 1.5rem;
+}
+
+.contact-content div textarea {
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.contact-content div2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    margin-top: 2rem;
+    border-bottom: 2px solid grey;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contact-content div2 textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    resize: none;
+    height: 80%;
+}
+
+.contact-content div2 label {
+    width: 100%;
+    z-index: 2;
+    font-size: 1.5rem;
+}
+
+.contact-content button {
+    border-radius: 0.2rem;
+    border: none;
+    width: 10rem;
+    height: 4rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #96DED1, #30D5C8, aquamarine);
+    font-size: 1.4rem;
+    color: white;
+}
+
+/* Thanks for Contacting */
+
+.form-help {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1519219788971-8d9797e0928e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlJTIwZGVza3xlbnwwfHwwfHw%3D&w=1000&q=80);
+    background-size: 100% 100%;
+    background-position: center;
+}

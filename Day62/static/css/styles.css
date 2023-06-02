@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.main-div {
+    padding-top: 7%;
+    background-color: #303030;
+    height: 80vh;
+}
+
+.lead {
+    padding: 0% 15%;
+    font-size: 1.2rem;
+}
+
+.container hr {
+    background-color: white;
+}
+
+.cafe-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-top: 1.5px solid white;
+    margin: .5rem 0;
+}
+
+.cafe-info h4, .cafe-info a, .cafe-info p {
+    font-size: 1.2rem;
+    margin-right: 3rem;
+    width: 100rem;
+    text-align: left;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+.cafe-info h4, .cafe-info p {
+    display: flex;
+    align-items: center;
+}

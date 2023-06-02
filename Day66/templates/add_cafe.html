@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add A Cafe</title>
+</head>
+<body>
+    <form action="{{ url_for('new_cafe') }}" method="POST">
+        <label for="name">Enter A Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter a name"><br>
+        <label for="map_url">Enter A Map URL</label>
+        <input type="text" id="map_url" name="map_url" placeholder="Enter a map url"><br>
+        <label for="img_url">Enter A Img URL</label>
+        <input type="text" id="img_url" name="img_url" placeholder="Enter a img url"><br>
+        <label for="loc">Enter A Location</label>
+        <input type="text" id="loc" name="loc" placeholder="Enter a Location"><br>
+        <label for="sockets">Enter A Socket Value</label>
+        <input type="checkbox" id="sockets" name="sockets" placeholder="Does your cafe have sockets"><br>
+        <label for="toilet">Enter A Bathroom Value</label>
+        <input type="checkbox" id="toilet" name="toilet" placeholder="Does your cafe have bathrooms"><br>
+        <label for="wifi">Enter A Wifi Value</label>
+        <input type="checkbox" id="wifi" name="wifi" placeholder="Does your cafe have WIFI"><br>
+        <label for="calls">Enter A Calls Value</label>
+        <input type="checkbox" id="calls" name="calls" placeholder="Does your cafe have Calls"><br>
+        <label for="seats">Enter A Seats Value</label>
+        <input type="text" id="seats" name="seats" placeholder="How many seats does your cafe have?"><br>
+        <label for="coffee_price">Enter A Coffee Price</label>
+        <input type="text" id="coffee_price" name="coffee_price" placeholder="How much does your coffee cost?"><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

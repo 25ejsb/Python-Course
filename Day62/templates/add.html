@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Add A New Cafe{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8">
+
+      <h1>Add a new cafe into the database</h1>
+      <form method="POST" action="{{ url_for('add_cafe') }}">
+        {{ form.csrf_token }}
+        {{ form.cafe.label }} <br> {{ form.cafe(size=100) }}
+        {{ form.location.label }} <br> {{ form.location(size=100) }}
+        {{ form.opening.label }} <br> {{ form.opening(size=100) }}
+        {{ form.closing.label }} <br> {{ form.closing(size=100) }}
+        {{ form.coffee_rating.label }} <br> {{ form.coffee_rating(size=0) }} <br>
+        {{ form.wifi_strength.label }} <br> {{ form.wifi_strength(size=0) }} <br>
+        {{ form.socket_avaliability.label }} <br> {{ form.socket_avaliability(size=0) }} <br><br>
+        {{ form.submit(size=100) }} <br><br>
+      </form>
+
+      <!-- This is where your WTForm will go -->
+
+	  <p class="space-above"><a href="{{ url_for('cafes') }}">See all cafes</a></p>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
